@@ -6,29 +6,29 @@ body {
   font-family: Lato, sans-serif;
 }
 
-.aaa {
+.intro {
   width: 500px;
   margin: 0 auto;
   display: block;
   text-align: right;
 }
 
-.aaa img {
+.intro__img {
   width: 100%;
 }
 
-.aaa .more_inf {
+.intro .intro__button {
   font-family: Fantasy, cursive;
 }
 
 @media (max-width:768px) {
-  .aaa {
+  .intro {
     text-align: center;
   }
 }
 
 
-.centered-main-page-element {
+.todo-list {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -75,7 +75,7 @@ button:hover {
 
 /* Heading */
 h3,
-label[for="new-task"] {
+label[for="newTask"] {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -103,12 +103,12 @@ input[type="text"]:focus {
 }
 
 /* New Task */
-label[for="new-task"] {
+label[for="newTask"] {
   display: block;
   margin: 0 0 20px;
 }
 
-input#new-task {
+input#newTask {
   width: 318px;
 }
 
