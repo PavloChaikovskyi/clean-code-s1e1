@@ -1,19 +1,69 @@
-<html>
-<HEAD><title>Todo App</title>
-<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
-<link rel="stylesheet" href="style.css" type="text/css" MEDIA="screen" charset="utf-8">
-</HEAD>
-<body>
-<div class="aaa"><img src="./eisenhower-matrix.jpg"><a class='more_inf' href="https://goal-life.com/page/method/matrix-eisenhower">Want more details&quest;</a></div>
-<div class="centered-main-page-element"><p id='topSectionForAddingElementToList'><label for="new-task">Add Item</label><div class="task-row-wrapper"><input id='new-task'class="task" type="text"><button>Add</button></div>
-</p><h3>Todo</h3>
-<ul id='incompleteTasks'>
-<li><input type='checkbox'><label class="task">Pay Bills</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button></li>
-<li class="editMode"><input type="checkbox"><label class="task">Go Shopping</label><input type="text" value="Go Shopping" class="task"><button class='edit'>Save</button><button class="delete"><img src="./remove.svg"></button></li>
-</ul><h3>Completed</h3><ul id="completed-tasks"><li><input type="checkbox" checked><label class="task">See the Doctor</label><input type="text" class="task"><button class="edit">Edit</button><button class="delete"><img src="./remove.svg"></button>
-</li>
-</ul>
-</div>
-<script type="text/javascript" SRC="app.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" media="screen">
+  <title>Eisenhower Matrix</title>
+</head>
+
+<body class="page">
+  <main>
+    <section class="intro section__intro">
+      <h1 class="intro__title">Eisenhower Matrix</h1>
+      <img src="./eisenhower-matrix.jpg" class="intro__img" alt="Eisenhower Matrix">
+      <a class="intro__button"
+          href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+    </section>
+
+    <section class="tasks section__tasks">
+      <div class="new-task">
+        <h3><label for="newTask" class="new-task__label">Add Item</label></h3>
+        <div class="d-flex new-task__row">
+          <input id="newTask" class="task new-task__input">
+          <button id="btnAdd" class="button new-task__button">Add</button>
+        </div>
+      </div>
+
+      <h3 class="tasks__title">Todo</h3>
+      <ul id="incompleteTasks" class="task__rows tasks__incompleted">
+        <li class="task__row">
+          <input type="checkbox" class="task__checkbox input__checkbox">
+          <label class="task__label">Pay Bills</label>
+          <input class="task task__input">
+          <button class="button btn__edit">Edit</button>
+          <button class="button btn__delete">
+            <img class="delete__img" src="./remove.svg" alt="">
+          </button>
+        </li>
+        <li class="edit-mode task__row">
+          <input type="checkbox" class="task__checkbox input__checkbox">
+          <label class="task__label">Go Shopping</label>
+          <input value="Go Shopping" class="task task__input">
+          <button class="button btn__edit">Save</button>
+          <button class="button btn__delete">
+              <img class="delete__img" src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+
+      <h3 class="tasks__title">Completed</h3>
+      <ul id="completedTasks" class="task__rows tasks__completed">
+        <li class="task__row">
+          <input type="checkbox" class="task__checkbox input__checkbox" checked>
+          <label class="task__label">See the Doctor</label>
+          <input class="task__input">
+          <button class="button btn__edit">Edit</button>
+          <button class="button btn__delete">
+            <img class="delete__img" src="./remove.svg" alt="">
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
 </body>
+
 </html>
