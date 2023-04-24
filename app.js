@@ -5,39 +5,34 @@ const completedTasksHolder = document.getElementById("completedTasks");
 
 const createNewTaskElement = function (taskString) {
   const listItem = document.createElement("li");
-  const checkBox = document.createElement("input");
-  const label = document.createElement("label");
-  const editInput = document.createElement("input");
-  const editButton = document.createElement("button");
-  const deleteButton = document.createElement("button");
-  const deleteButtonImg = document.createElement("img");
-
   listItem.classList.add("task__row");
-
-  deleteButtonImg.classList.add("delete__img");
-  deleteButtonImg.setAttribute("alt", "");
-
+  
+  const label = document.createElement("label");
   label.innerText = taskString;
   label.className = "task__label";
-
+  
+  const checkBox = document.createElement("input");
   checkBox.type = "checkbox";
   checkBox.className = "task__checkbox input__checkbox";
-
+  
+  const editInput = document.createElement("input");
   editInput.type = "text";
   editInput.className = "task__input";
-
+  
+  const editButton = document.createElement("button");
   editButton.innerText = "Edit";
   editButton.className = "button btn__edit";
-
-  deleteButton.className = "button btn__delete";
+  
+  const deleteButtonImg = document.createElement("img");
+  deleteButtonImg.classList.add("delete__img");
+  deleteButtonImg.setAttribute("alt", "");
   deleteButtonImg.src = "./remove.svg";
   
+  const deleteButton = document.createElement("button");
+  deleteButton.className = "button btn__delete";
   deleteButton.appendChild(deleteButtonImg);
-  listItem.appendChild(checkBox);
-  listItem.appendChild(label);
-  listItem.appendChild(editInput);
-  listItem.appendChild(editButton);
-  listItem.appendChild(deleteButton);
+
+  listItem.append(checkBox, label, editInput, editButton, deleteButton);
 
   return listItem;
 };
