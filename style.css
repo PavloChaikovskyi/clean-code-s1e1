@@ -23,9 +23,11 @@
 }
 
 @media (max-width:768px) {
+
   .intro {
     text-align: center;
   }
+
 }
 
 .tasks {
