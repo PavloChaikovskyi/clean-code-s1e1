@@ -108,13 +108,13 @@ button {
 }
 
 .new-task__input {
-  width: 318px;
+  width: 432px;
 }
 
 /* Task list */
 .task__row {
   overflow: hidden;
-  padding: 18px 0;
+  padding: 19px 0;
   border-bottom: 1px solid #eee;
   display: flex;
   justify-content: space-between;
@@ -133,7 +133,7 @@ button {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
-  width: 226px;
+  width: 342px;
 }
 
 .task__row > .task__input {
