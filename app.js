@@ -91,8 +91,6 @@ const taskIncomplete = function () {
 addButton.addEventListener("click", addTask);
 
 const bindTaskEvents = function (taskListItem, checkBoxEventHandler) {
-  console.log("bind list item events");
-
   const checkBox = taskListItem.querySelector(".input__checkbox");
   const editButton = taskListItem.querySelector(".btn__edit");
   const deleteButton = taskListItem.querySelector(".btn__delete");
