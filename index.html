@@ -13,45 +13,45 @@
         href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
   </section>
 
-  <section class="todo-list">
-    
+  <section class="tasks">
     <p>
-      <label for="newTask">Add Item</label>
+      <label for="newTask" class="new-task__label">Add Item</label>
       <div class="d-flex">
-        <input id="newTask" class="task">
+        <input id="newTask" class="task new-task__input">
         <button>Add</button>
       </div>
     </p>
 
     <h3>Todo</h3>
-    <ul id="incompleteTasks">
+    <ul id="incompleteTasks" class="tasks__incompleted">
       <li>
         <input type="checkbox">
         <label class="task">Pay Bills</label>
         <input class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+        <button class="btn__edit">Edit</button>
+        <button class="btn__delete">
           <img src="./remove.svg">
         </button>
       </li>
-      <li class="editMode">
+      <li class="edit-mode">
         <input type="checkbox">
         <label class="task">Go Shopping</label>
         <input value="Go Shopping" class="task">
-        <button class="edit">Save</button>
-        <button class="delete">
+        <button class="btn__edit">Save</button>
+        <button class="btn__delete">
             <img src="./remove.svg">
         </button>
       </li>
     </ul>
+
     <h3>Completed</h3>
-    <ul id="completedTasks">
+    <ul id="completedTasks" class="tasks__completed">
       <li>
         <input type="checkbox" checked>
         <label class="task">See the Doctor</label>
         <input class="task">
-        <button class="edit">Edit</button>
-        <button class="delete">
+        <button class="btn__edit">Edit</button>
+        <button class="btn__delete">
           <img src="./remove.svg">
         </button>
       </li>
