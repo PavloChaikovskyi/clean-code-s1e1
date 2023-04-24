@@ -180,3 +180,11 @@ button {
 .task__rows .task__row.edit-mode .task__label {
   display: none;
 }
+
+.intro__title {
+  opacity: 0;
+  visibility: hidden;
+  height: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+}
