@@ -1,5 +1,9 @@
 /* Basic Style */
 
+h3 { 
+  margin: 0;
+}
+
 .page {
   background-color: #f8f8f8;
   color: #333;
@@ -102,6 +106,11 @@ button {
 
 .task:focus {
   color: #333;
+}
+
+.new-task {
+  padding-bottom: 16px;
+  padding-top: 16px;
 }
 
 .new-task__label {
